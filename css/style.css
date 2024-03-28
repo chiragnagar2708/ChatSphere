@@ -1,0 +1,91 @@
+body{
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(227, 162, 213));
+    height: 97.8vh;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    margin-top: 50px;
+}
+h1{
+    margin: 10px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.container{
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    padding: 10px;
+    border: 4px solid rgb(0,0,0);
+    background-color: rgb(229, 228, 228);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    overflow-y: auto;
+}
+
+.message{
+    background-color: rgb(184, 224, 142);
+    width: 25%;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* font-size: 0.1rem; */
+}
+.right{
+    margin: 10px 0px;
+    float: right;
+    clear: both;
+}
+.left{
+    margin: 10px 0px;
+    float: left;
+    clear: both;
+}
+#send-form{
+    margin: auto;
+    text-align: center;
+    width: 55%;
+}
+#messageInp{
+    width: 80%;
+    border: 2px solid black;
+    background-color: rgb(229, 228, 228);
+    border-radius: 5px;
+    height: 25px;
+}
+.btn{
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+    height: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(229, 228, 228);
+    color: black;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 772px){
+    .container{
+        width: 60%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    
+}
+@media only screen and (max-width: 450px){
+    h1{
+        font-size: 1.7rem;
+    }
+    .message{
+        font-size: 0.8rem;
+    }
+}
